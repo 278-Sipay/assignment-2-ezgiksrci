@@ -13,7 +13,7 @@ Min-Max amout alanlari aralik olarak arama yapacak.
 BeginDate - EndDate alanlari aralik olarak arama yapacak.
 
 
-Bu filtre kullanimi icin reposiroty katmaninda bu kriterleri dinamik olarak parametre verebilecegimiz bir fonksiyon hazirlayiniz. Bu fonksiyon gelen kriterleri execute ederek sonucu verecektir. 
+Bu filtre kullanimi icin repository katmaninda bu kriterleri dinamik olarak parametre verebilecegimiz bir fonksiyon hazirlayiniz. Bu fonksiyon gelen kriterleri execute ederek sonucu verecektir. 
 
 GenericRepository uzerinde tek parametre alan Where func iplemantasyonunu yapip bu fonksiyona tum paramtreleri gecerek sorguyu calistiriniz. 
 
