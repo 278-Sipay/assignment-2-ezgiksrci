@@ -12,7 +12,7 @@ public interface IGenericRepository<Entity> where Entity : class
     void DeleteById(int id);
     List<Entity> GetAll();
     IQueryable<Entity> GetAllAsQueryable();
-
+    
+    //====================================================================================================
     List<Entity> GetByParameter(Expression<Func<Entity, bool>> expression);
-
 }

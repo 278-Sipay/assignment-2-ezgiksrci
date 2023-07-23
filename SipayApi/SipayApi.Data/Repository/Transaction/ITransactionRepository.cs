@@ -6,8 +6,9 @@ public interface ITransactionRepository : IGenericRepository<Transaction>
 {
     List<Transaction> GetByReference(string reference);
 
+    //====================================================================================================
     List<Transaction> GetByParameter(int accountNumber, decimal? minAmountCredit, decimal? maxAmountCredit,
-                                     decimal? minAmountDebit, decimal? maxAmountDebit,
-                                     string description, DateTime? beginDate, DateTime? endDate,
-                                     string referenceNumber);
+                                         decimal? minAmountDebit, decimal? maxAmountDebit,
+                                         string description, DateTime? beginDate, DateTime? endDate,
+                                         string referenceNumber);
 }

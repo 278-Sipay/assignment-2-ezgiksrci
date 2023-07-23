@@ -17,6 +17,7 @@ public class TransactionRepository : GenericRepository<Transaction>, ITransactio
         return dbContext.Set<Transaction>().Where(x => x.ReferenceNumber == reference).ToList();
     }
 
+    //====================================================================================================
     public List<Transaction> GetByParameter(int accountNumber, decimal? minAmountCredit, decimal? maxAmountCredit,
                                              decimal? minAmountDebit, decimal? maxAmountDebit,
                                              string description, DateTime? beginDate, DateTime? endDate,

@@ -55,6 +55,8 @@ public class GenericRepository<Entity> : IGenericRepository<Entity> where Entity
         dbContext.Set<Entity>().Update(entity);
     }
 
+    //====================================================================================================
+
     public List<Entity> GetByParameter(Expression<Func<Entity, bool>> expression)
     {
         return dbContext.Set<Entity>().Where(expression).ToList();
